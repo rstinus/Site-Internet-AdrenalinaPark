@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+		<meta charset="utf-8" />
+		<title> Adrenalina Park Formulaire 2 </title>
+		<link rel="stylesheet" href="./styles/index.css" />
+        <link rel="stylesheet" href="./styles/formulaire.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+		
+        <nav class="menu">
+			<a href="./index.html">Accueil</a>
+			<a href="./activite.html">Activité proposé</a>
+			<a class="ici"  href="./formulaire.html">Formulaire de réservation</a>
+            <a href="./contact.html">Contact</a>
+		</nav>
+        <header>
+            <a class = "logo" href="./index.html">
+                <img src="./images/Logo.png" alt="Logo">
+            </a>
+          
+	    </header>
+
+
+		
+	    <main>
+
+            <section>
+                    <h1> Formulaire </h1>
+                    <article>
+                        <p> Information nécessaire pour la réservation </p>
+                        <form action="https://webdev.iut-orsay.fr/r102/tests/formulaire/test_formulaire.php" method="post" >
+                            <label for="u_name"> Nom </label>
+                            <input id="u_name" name="user name" type="text" required placeholder="nom de famille" />
+
+                            <label for="first_name_user" > Prénom </label>
+                            <input id="first_name_user" name="user first name" type="text" required placeholder="prénom" />
+
+                            <label for="phone"> Numéro de téléphone : <br> <small> Format : 0625951485 </small> </label>
+                            <input type="tel" id="phone" name="phone_user" required placeholder="numéro de téléphone" pattern="^0\[0-9]{9}"/>
+                            
+                            <label for="mail"> Adresse Mail : </label>
+                            <input type="text" id="mail" name="mail_user" required placeholder="adresse mail"/> 
+							
+                            <label for="reservation_satisfaction"> Etes vous satisfait du formulaire de réservation </label>
+                            <input id="reservation_satisfaction" name="user reservation satisfaction" type="range" min="1" max="100" />
+
+                            <label for="commentary"> Avez-vous des commentaire </label> <br>
+                            <textarea id="commentary" name="user commentary" rows="20" cols="100"> Votre commentaire </textarea>
+
+                            <nav>
+                                <a class="f2" href="./formulaire.html" > retour </a>
+                            </nav>
+							<a href="#popup" class="open-popup">Condition de réservation</a>
+							<input type="submit" value="Envoyer" />
+                        </form>
+                    </article>
+            </section>
+			
+
+	    </main>
+		
+		<div id="popup" class="popup">
+			<div class="popup-content">
+				<a href="#" class="close-popup">&times;</a>
+				<h2>Condition de réservation</h2>
+				<p>Pour toute annulation moins de 2 jours avant le jours réservés une <alert>facturation de 50% du montant de la réservation</alert> vous sera infligé.</p>
+				<p>Pour toute annulation au-delà de 2 jours avant le jours réservés aucune pénalité ne vous sera facturé.</p>
+				<block>
+					<h3>En cas de force majeur merci de nous contacter par ces biais</h3>
+					<p>Téléphone : +33 1 23 45 67 89</p>
+					<p>EMail : contact@adrenalina-park.fr</p>
+				</block>
+			</div>
+		</div>
+		
+	    <footer>
+        	<p>&copy; 2024 Parc Sportif - Sous la Tour Eiffel. Tous droits réservés. | <a href="Conditions-d'utilisation.html">Conditions d'utilisation</a> | <a href="Politique-de-confidentialité.html">Politique de confidentialité</a></p>
+            <p><a href="Rapport-JAHIER-Maelan-STINUS-Remy.txt" download>Télécharger le Rapport</a> | <a href="document.pdf" target="_blank">Ouvrir le Rapport en pdf</a></p>
+            <a class = "logo" href="https://www.iut-orsay.fr/">
+                <img src="./images/LogoIUT.jpg" alt="Logo">
+            </a>
+        </footer>
+
+	</body>
+
+</html>
+
+
+
+
+
+

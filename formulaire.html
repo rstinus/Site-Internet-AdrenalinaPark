@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+		<meta charset="utf-8" />
+		<title> Adrenalina Park Formulaire</title>
+		<link rel="stylesheet" href="./styles/index.css" />
+		<link rel="stylesheet" href="./styles/formulaire.css" />
+	</head>
+
+	<body>
+        <nav class="menu">
+			<a href="./index.html">Accueil</a>
+			<a href="./activite.html">Activité proposé</a>
+			<a class="ici" href="./formulaire.html">Formulaire de réservation</a>
+			<a href="./contact.html">Contact</a>
+		</nav>
+        <header>
+			<a class = "logo" href="./index.html">
+				<img  src="./images/Logo.png" alt="Logo">
+			</a>
+			<h1> Formulaire </h1>
+	    </header>
+
+
+		
+	    <main>	
+            <section>
+                    <article>
+                        <form action="https://webdev.iut-orsay.fr/r102/tests/formulaire/test_formulaire.php" method="post" >
+                            <fieldset>
+								<legend>Selectionner le nombre de personne</legend>
+								<label for="Adulte"> Adulte (16+) </label>
+								<img  class="resa" src="./images/adulte.png" alt="Adulte" />
+								<input id="Adulte" name="Personne + 16 ans" type="number" required min=0 max=20 placeholder="entre 0 et 20" />
+
+								<label for="Adolescent" > Ado (10+) </label>
+								<img  class="resa" src="./images/ado.png" alt="Ado" />
+								<input id="Adolescent" name="Personne + 10 ans" type="number" required min=0 max=20 placeholder="entre 0 et 20" />
+
+								<label for="Enfant"> Enfant (0-10) </label>
+								<img  class="resa" src="./images/enfant.png" alt="Enfant" />
+								<input id="Enfant" name="Personne - 10 ans" type="number" required min=0 max=20 placeholder="entre 0 et 20" />
+							</fieldset>
+
+                            <label for="Date_sejour_debut"> Date de début du séjour </label>
+                            <input id="Date_sejour_debut" name="Date du séjour au parc" type="date" required />
+
+                            <label for="Date_sejour_fin"> Date du séjour </label>
+                            <input id="Date_sejour_fin" name="Date du séjour au parc" type="date" required />
+
+                            <nav>
+                                <a class="f2" href="./formulaire-2.html" > Continuer </a>
+                                
+                            </nav>
+                           </form>
+                    </article>
+            </section>
+	    </main>
+		
+	    <footer>
+        	<p>&copy; 2024 Parc Sportif - Sous la Tour Eiffel. Tous droits réservés. |<a href="Contact.html">Contact</a> <a href="Conditions-d'utilisation.html">Conditions d'utilisation</a> | <a href="Politique-de-confidentialité.html">Politique de confidentialité</a></p>
+            <p><a href="Rapport-JAHIER-Maelan-STINUS-Remy.txt" download>Télécharger le Rapport</a> | <a href="document.pdf" target="_blank">Ouvrir le Rapport en pdf</a></p>
+			<a class = "logo" href="https://www.iut-orsay.fr/">
+				<img src="./images/LogoIUT.jpg" alt="Logo">
+			</a>
+        </footer>
+
+	</body>
+
+</html>

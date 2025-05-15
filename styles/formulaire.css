@@ -1,0 +1,171 @@
+@charset "utf-8";
+
+.f2:hover {
+    transform: scale(1.02);
+    background-color: #3a9e3a;
+}
+
+.f2 {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #45b645;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;  
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    font-size: 1.3rem;
+    border-radius: 0.5rem;
+    border-width: 0.3rem;
+    text-decoration: none;
+	position:right-side;
+    margin-right:10rem;
+}
+  
+input[type=submit]{
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    font-size: 1.3rem;
+    border-radius: 0.5rem;
+    border-width: 0rem;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    background-color: #45b645;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;  
+  }
+
+.submit:hover {
+    transform: scale(1.02);
+    background-color: #3a9e3a;
+}
+  
+  main form {
+      background-color:#eee;
+      margin: 1rem;
+      padding : 1rem;
+      border-radius : 0.5rem;
+  }
+  
+  main form label{
+      margin-top : 1.5rem;
+      display : inline-block;
+      width : 15%;
+      font-weight : bold;
+	  margin-left:2rem;
+  }
+  
+  main form input[type=range]{
+      margin-top : 1.5rem;
+      display : inline-block;
+      width : 70%;
+      font-weight : bold;
+  }
+  
+  main form input{
+      margin-top : 1.5rem;
+      display : inline-block;
+      width : 30%;
+      font-weight : bold;
+  }
+  
+  main form fieldset{
+      margin-top : 1.5rem;
+      padding : 0.5rem 0.5rem 0.5rem 2.5rem ;
+      border-radius : 0.5rem;
+      width:70%;
+      display : inline-block;
+      font-weight : bold;
+	  margin-right: 10rem;
+  }
+  main form fieldset legend{
+      margin-left : 1.5rem;
+      padding : 0.2rem 0.8rem;
+      background-color:#ddd;
+      border:2rem;
+      border-color: black;
+      border-width: 10rem;
+      border-radius : 0.5rem;
+      font-weight : bold;
+  }
+  
+  .resa {
+    height: 3rem;
+    margin-right: 30rem; 
+  }
+
+/* Styles de base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+main {
+    margin-top: 50px;
+}
+
+/* Styles pour le lien d'ouverture */
+.open-popup {	
+    margin-top: 10px;
+    background-color: #45b645;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;  
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    font-size: 1.3rem;
+    border-radius: 0.5rem;
+    border-width: 0.3rem;
+    text-decoration: none;
+}
+
+.open-popup:hover {
+    transform: scale(1.02);
+    background-color: #3a9e3a;
+}
+
+
+
+/* Styles pour masquer la popup par défaut */
+.popup {
+    display: none; /* Masquer par défaut */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Styles pour la popup */
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 500px;
+}
+
+.close-popup { /* croix pour fermer la popup */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+/* Afficher la popup lorsque :target est activé */
+:target {
+    display: flex;
+}
